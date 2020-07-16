@@ -15,15 +15,11 @@ namespace mhunesi\crontab\input\assets;
 use Yii;
 use yii\web\AssetBundle;
 
-class PrettyCronAssets extends AssetBundle
+class MomentJsAssets extends AssetBundle
 {
-    public $sourcePath = '@npm/';
-
-    public $css = [
-        'formio.full.min.css',
-    ];
+    public $sourcePath = '@npm/moment/min';
 
     public $js = [
-        'formio.full.min.js',
+        'moment-with-locales.js',
     ];
 }

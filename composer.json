@@ -12,7 +12,9 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "npm-asset/prettycron": "0.10.0"
+        "npm-asset/moment": "^2.16.0",
+        "npm-asset/later": "^1.2.0",
+        "npm-asset/cronstrue": "1.94.0"
     },
     "autoload": {
         "psr-4": {

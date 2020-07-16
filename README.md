@@ -28,4 +28,25 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \mhunesi\crontab\input\AutoloadExample::widget(); ?>```
+<?= $form->field($model, 'cron')->widget('\mhunesi\crontab\input\CrontabInput',[
+    'tab' => 'weekly',
+    'tabs' => [
+        'minutes' => false, //Minutes tab invisible
+        'hourly' => false,  //Minutes tab invisible
+        'daily' => false,   //Minutes tab invisible
+        'weekly' => true,   //Minutes tab visible
+        'monthly' => true,  //Minutes tab visible
+        'yearly' => true,   //Minutes tab visible
+        'advanced' => false,//Minutes tab invisible
+    ]
+]) ?>
+
+```
+
+Or  
+
+```php
+<?= \mhunesi\crontab\input\CrontabInput::widget([
+        'name' => 'cron'
+]) ?>
+```

@@ -1,0 +1,41 @@
+.manuel-input {
+    text-align: center;
+    font-size: 250%;
+    width: 100%;
+    background-color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 0.6em;
+    color: #ffffff;
+    padding-top: 0.075rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.manuel-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.part-explanation {
+    font-size: 75%;
+    color: #a8a8a8;
+    text-align: center;
+}
+
+.part-explanation table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+    text-align: center;
+}
+.part-explanation div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 0;
+}
