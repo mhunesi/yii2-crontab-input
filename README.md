@@ -50,3 +50,10 @@ Or
         'name' => 'cron'
 ]) ?>
 ```
+
+Preview
+-----
+
+![](https://media.giphy.com/media/keUQdQ1IlXo1iK1h1a/giphy.gif)
+
+
