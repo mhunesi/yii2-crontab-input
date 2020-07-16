@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mhunesi/yii2-crontab-input "*"
+composer require mhunesi/yii2-crontab-input "*"
 ```
 
 or add
