@@ -51,7 +51,7 @@ class CrontabInput extends InputWidget
     private $data =  [
         'type' => 'minutes',
         'description' => '',
-        'cronExpression' => '* * * * *',
+        'cronExpression' => null,
         'minutes' => [
             'minuteInterval' => 1
         ],
@@ -136,7 +136,8 @@ class CrontabInput extends InputWidget
             [
                 'language' => $this->language,
                 'tabs' => $this->tabs,
-                'type' => $this->tab
+                'type' => $this->tab,
+                'cronExpression' => $this->value ?? '*/1 * * * *'
             ]
         );
     }
@@ -162,14 +163,17 @@ class CrontabInput extends InputWidget
             'el' => '#'.$this->el,
             'data' => $this->data,
             'language' => $this->language,
+            'created' => new JsExpression('function(){
+                    console.log(this.parseExpression());
+                }'),
             'computed' => [
                 'generateDescription' => new JsExpression('CronTabInput.generateDescription')
-
             ],
             'methods' => [
                 'setInputValue' => new JsExpression("function(){
                    document.querySelector('#{$inputID}').value = this.cronExpression;
                 }"),
+                'parseExpression' => new JsExpression('CronTabInput.parseExpression'),
             ]
         ]);
 
