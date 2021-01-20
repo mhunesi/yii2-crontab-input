@@ -137,7 +137,7 @@ class CrontabInput extends InputWidget
                 'language' => $this->language,
                 'tabs' => $this->tabs,
                 'type' => $this->tab,
-                'cronExpression' => $this->value ?? '*/1 * * * *'
+                'cronExpression' => $this->value
             ]
         );
     }
